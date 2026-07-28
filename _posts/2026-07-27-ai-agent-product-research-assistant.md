@@ -139,7 +139,7 @@ A free MCP key is available at [open-intl.sorftime.com](https://open-intl.sorfti
 
 ## References
 
-[1] Sorftime Seller Agent GitHub Repository — https://github.com/DannylydST/sorftime-seller-agent
-[2] Sorftime International MCP Portal — https://open-intl.sorftime.com
-[3] Model Context Protocol Specification — https://modelcontextprotocol.io
+1. [Sorftime Seller Agent GitHub Repository](https://github.com/DannylydST/sorftime-seller-agent)
+2. [Sorftime International MCP Portal](https://open-intl.sorftime.com)
+3. [Model Context Protocol Specification](https://modelcontextprotocol.io)
 ---
