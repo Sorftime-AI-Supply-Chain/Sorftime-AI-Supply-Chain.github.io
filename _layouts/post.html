@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ page.title }} | {{ site.title }}</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+<style>
+:root { --bg:#0a0a0f; --surface:#14141c; --surface-2:#1c1c28; --border:#2a2a3a; --text:#e8e8ee; --text-dim:#8a8a9a; --accent:#00d9a3; --accent-2:#4d9fff; --accent-3:#ff6b9d; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; line-height: 1.75; font-size: 17px; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+header.site { padding: 20px 0; border-bottom: 1px solid var(--border); background: rgba(10,10,15,0.85); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 100; }
+header.site .wrap { display: flex; justify-content: space-between; align-items: center; }
+header.site a.brand { color: var(--accent); font-weight: 800; font-size: 18px; text-decoration: none; letter-spacing: -0.5px; }
+header.site nav a { color: var(--text-dim); text-decoration: none; margin-left: 24px; font-size: 14px; }
+header.site nav a:hover { color: var(--accent); }
+
+article { padding: 80px 0 60px; }
+.post-meta { color: var(--text-dim); font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px; display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+.post-meta .tag { background: var(--surface-2); border: 1px solid var(--border); padding: 3px 10px; border-radius: 100px; color: var(--accent) !important; text-decoration: none; font-size: 12px; }
+h1 { color: #fff; font-size: 44px; font-weight: 800; letter-spacing: -1.5px; line-height: 1.15; margin-bottom: 16px; }
+.lede { color: var(--text-dim); font-size: 18px; margin-bottom: 32px; font-style: italic; border-left: 3px solid var(--accent); padding-left: 16px; }
+img.cover { width: 100%; border-radius: 12px; border: 1px solid var(--border); margin: 0 0 40px; }
+h2 { color: #fff; font-size: 28px; margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-weight: 700; letter-spacing: -0.5px; }
+h3 { color: var(--accent); font-size: 22px; margin-top: 28px; font-weight: 600; }
+p { color: var(--text); margin: 16px 0; }
+strong { color: #fff; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-2); }
+code { background: var(--surface-2); color: var(--accent-3); padding: 2px 7px; border-radius: 4px; font-size: 0.88em; font-family: "SF Mono", Consolas, monospace; }
+pre { background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; padding: 18px 20px; margin: 20px 0; overflow-x: auto; }
+pre code { background: transparent; color: var(--text); padding: 0; }
+blockquote { border-left: 3px solid var(--accent); background: var(--surface); padding: 14px 20px; margin: 20px 0; color: var(--text-dim); border-radius: 0 8px 8px 0; }
+hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+th { background: var(--surface-2); color: var(--accent); padding: 12px; text-align: left; font-weight: 600; }
+td { padding: 12px; border-top: 1px solid var(--border); color: var(--text); }
+ul, ol { padding-left: 28px; color: var(--text); }
+li { margin: 6px 0; }
+.prompt-box { background: var(--surface-2); border-left: 3px solid var(--accent-3); padding: 14px 18px; margin: 16px 0; border-radius: 0 8px 8px 0; font-style: italic; color: var(--text-dim); }
+.prompt-box::before { content: "PROMPT"; display: block; color: var(--accent-3); font-size: 11px; font-weight: 700; letter-spacing: 2px; font-style: normal; margin-bottom: 8px; }
+footer.site { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; color: var(--text-dim); font-size: 13px; }
+footer.site a { color: var(--accent); }
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="{{ "/" | relative_url }}">⚡ {{ site.title }}</a>
+    <nav><a href="{{ "/" | relative_url }}">← Back to home</a></nav>
+  </div>
+</header>
+<article>
+<div class="wrap">
+  <div class="post-meta">
+    <span>📅 {{ page.date | date: "%B %-d, %Y" }}</span>
+    {% for tag in page.tags %}<a class="tag" href="#">#{{ tag }}</a>{% endfor %}
+  </div>
+  <h1>{{ page.title }}</h1>
+  {% if page.description %}<div class="lede">{{ page.description }}</div>{% endif %}
+  {% if page.cover_image %}<img class="cover" src="{{ page.cover_image | relative_url }}" alt="{{ page.title }}">{% endif %}
+  {{ content }}
+</div>
+</article>
+<footer class="site">
+  <div class="wrap">
+    © 2026 {{ site.title }} · Powered by Jekyll + GitHub Pages<br>
+    <a href="{{ "/" | relative_url }}">← All articles</a>
+  </div>
+</footer>
+</body>
+</html>
