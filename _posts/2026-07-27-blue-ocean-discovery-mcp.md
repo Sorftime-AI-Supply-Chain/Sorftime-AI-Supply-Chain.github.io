@@ -5,6 +5,7 @@ type: tutorial
 target_platforms: [dev.to, github]
 status: 待审核
 tags: [MCP, Amazon, AI, ecommerce]
+cover_image: /assets/images/posts/amazon.png
 ---
 
 # Blue Ocean Product Discovery — Let AI Find Your Next Winning Category
@@ -132,3 +133,16 @@ After installation, restart your AI agent. It auto-discovers all 86 MCP tools. C
 **来源状态**：产品能力描述基于 sorftime-seller-agent 开源文档，未引用外部来源
 
 *初稿完成：2026-07-27 | 待审核*
+
+
+---
+
+## 配图
+
+![amazon 选品分析图]({{ '/assets/images/posts/amazon.png' | relative_url }})
+
+*Sorftime MCP 跑出此图，提示词：*
+
+```
+I'm a beginner seller on Amazon US with a $10K budget. Use the Hidden Profit Index to find blue ocean product opportunities in kitchen storage — low competition, under $30, at least 300 monthly sales.
+```
