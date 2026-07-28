@@ -47,14 +47,13 @@ pre code { background: transparent; color: var(--text); padding: 0; }
 blockquote { border-left: 3px solid var(--accent); background: var(--surface); padding: 12px 18px; margin: 18px 0; color: var(--text-dim); border-radius: 0 8px 8px 0; }
 hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
 /* References 卡片 */
-h2:has(+ ol),
-h2:has(+ p:empty + ol) { color: #fff; font-size: 22px; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); }
-.post-content ol { list-style: none; padding: 0; counter-reset: ref; margin: 20px 0; }
-.post-content ol li { counter-increment: ref; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px 14px 56px; margin: 10px 0; position: relative; transition: 0.2s; font-size: 15px; line-height: 1.6; }
-.post-content ol li::before { content: '[' counter(ref) ']'; position: absolute; left: 18px; top: 14px; color: var(--accent); font-weight: 700; font-size: 14px; }
-.post-content ol li:hover { border-color: var(--accent); transform: translateX(4px); background: var(--surface-2); }
-.post-content ol li a { color: var(--accent-2); word-break: break-all; font-family: 'SF Mono', Consolas, monospace; font-size: 13px; }
-.post-content ol li a:hover { color: var(--accent); }
+h2 + ol, h2 + p:empty + ol { color: #fff; font-size: 22px; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); }
+ol { list-style: none; padding: 0; counter-reset: ref; margin: 20px 0; }
+ol li { counter-increment: ref; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px 16px 60px; margin: 10px 0; position: relative; transition: 0.2s; font-size: 15px; line-height: 1.6; }
+ol li::before { content: '[' counter(ref) ']'; position: absolute; left: 18px; top: 16px; color: var(--accent); font-weight: 700; font-size: 14px; }
+ol li:hover { border-color: var(--accent); transform: translateX(4px); background: var(--surface-2); }
+ol li a { color: var(--accent-2); word-break: break-all; font-family: 'SF Mono', Consolas, monospace; font-size: 13px; }
+ol li a:hover { color: var(--accent); }
 
 table { width: 100%; border-collapse: collapse; margin: 18px 0; max-width: 100%; }
 th { background: var(--surface-2); color: var(--accent); padding: 10px 12px; text-align: left; font-weight: 600; font-size: 14px; }
