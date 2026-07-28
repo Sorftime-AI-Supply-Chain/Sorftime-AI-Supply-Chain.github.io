@@ -116,9 +116,9 @@ After installation, restart your AI agent. It auto-discovers all 86 MCP tools. C
 
 ## References
 
-[1] Sorftime Seller Agent GitHub Repository — https://github.com/DannylydST/sorftime-seller-agent
+1. [Sorftime Seller Agent GitHub Repository](https://github.com/DannylydST/sorftime-seller-agent)
 
-[2] Sorftime International MCP Portal — https://open-intl.sorftime.com
+2. [Sorftime International MCP Portal](https://open-intl.sorftime.com)
 
-[3] Model Context Protocol Specification — https://modelcontextprotocol.io
+3. [Model Context Protocol Specification](https://modelcontextprotocol.io)
 ---
