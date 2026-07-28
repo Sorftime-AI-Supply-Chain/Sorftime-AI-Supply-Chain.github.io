@@ -52,7 +52,7 @@ ol { list-style: none; padding: 0; counter-reset: ref; margin: 20px 0; }
 ol li { counter-increment: ref; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px 16px 60px; margin: 10px 0; position: relative; transition: 0.2s; font-size: 15px; line-height: 1.6; }
 ol li::before { content: '[' counter(ref) ']'; position: absolute; left: 18px; top: 16px; color: var(--accent); font-weight: 700; font-size: 14px; }
 ol li:hover { border-color: var(--accent); transform: translateX(4px); background: var(--surface-2); }
-ol li a { color: var(--accent-2); word-break: break-all; font-family: 'SF Mono', Consolas, monospace; font-size: 13px; }
+ol li a { color: var(--accent-2); word-break: break-all; font-family: 'SF Mono', Consolas, monospace; font-size: 13px; font-weight: 400; text-decoration: none; }
 ol li a:hover { color: var(--accent); }
 
 table { width: 100%; border-collapse: collapse; margin: 18px 0; max-width: 100%; }
