@@ -122,15 +122,3 @@ After installation, restart your AI agent. It auto-discovers all 86 MCP tools. C
 
 [3] Model Context Protocol Specification — https://modelcontextprotocol.io
 ---
-
-## 审核备注
-
-> 以下为内部审核用，发布前删除。
-
-**综合评级**：✅ 可发布
-
-**已自动修复**：竞对名称/中文叙事/第一人称/感叹号 扫描通过
-**建议关注**：标题是否需要微调、CTA 链接是否最新
-**来源状态**：产品能力描述基于 sorftime-seller-agent 开源文档，未引用外部来源
-
-*初稿完成：2026-07-27 | 待审核*
