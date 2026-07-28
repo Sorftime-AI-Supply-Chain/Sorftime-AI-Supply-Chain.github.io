@@ -143,15 +143,3 @@ A free account at open-intl.sorftime.com provides API access for marketplace int
 
 Amazon advertising data has always contained the answers. The problem was never the data. It was the friction of accessing it. MCP removes that friction. The analysis becomes a conversation. And the conversation starts with a single question.
 ---
-
-## 审核备注
-
-> 以下为内部审核用，发布前删除。
-
-**综合评级**：✅ 可发布
-
-**已自动修复**：竞对名称/中文叙事/第一人称/感叹号 扫描通过
-**建议关注**：标题是否需要微调、CTA 链接是否最新
-**来源状态**：产品能力描述基于 sorftime-seller-agent 开源文档，未引用外部来源
-
-*初稿完成：2026-07-27 | 待审核*
