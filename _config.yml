@@ -1,10 +1,11 @@
 title: Sorftime AI Supply Chain
-description: AI-driven cross-border ecommerce intelligence, MCP tooling, and supply chain insights for Amazon sellers.
+description: AI-driven cross-border ecommerce intelligence
 email: contact@sorftime.com
 theme: minima
 permalink: /:title/
-url: ""
-baseurl: ""
+url: ''
+baseurl: ''
 lang: en
-twitter:
-  username: sorftimeai
+show_excerpts: true
+excerpt_separator: <!--more-->
+reading_time: true
