@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ page.title }} | {{ site.title }}</title>
 <meta name="description" content="{{ page.description | default: site.description }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
 <style>
 :root { --bg:#0a0a0f; --surface:#14141c; --surface-2:#1c1c28; --border:#2a2a3a; --text:#e8e8ee; --text-dim:#8a8a9a; --accent:#00d9a3; --accent-2:#4d9fff; --accent-3:#ff6b9d; }
 * { box-sizing: border-box; margin: 0; padding: 0; }

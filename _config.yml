@@ -3,8 +3,8 @@ description: AI-driven cross-border ecommerce intelligence
 email: contact@sorftime.com
 theme: minima
 permalink: /:title/
-url: ''
-baseurl: ''
+url: 'https://sorftime-ai-supply-chain.github.io'
+baseurl: 'https://sorftime-ai-supply-chain.github.io'
 lang: en
 show_excerpts: true
 excerpt_separator: <!--more-->
